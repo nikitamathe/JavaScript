@@ -72,6 +72,55 @@ let stringNumber = String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
 
+// ***************************** Operations **********************************
+
+let value = 3
+let negvalue = -value 
+console.log(negvalue); // Negative value
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**3); // 2 raised to the power 2
+console.log(2/3); // Divide
+console.log(2%3); // Remainder
+
+let str1 = "Hello"
+let str2 = " Nishita"
+let str3 = str1 + str2
+console.log(str3)
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+
+console.log(3 + 4 * 5 % 3); // improper way to solve multiple operations
+console.log((3 + 4) * 5 % 3); // use of proper parenthesis
+
+console.log(true);
+console.log(+true); // tricky conversion. Not a good practice
+//console.log(true+);
+console.log(+""); // tricky conversion. Not a good practice
+
+let num1, num2, num3 
+num1 = num2 =num3 = 2+2
+// Prefix and Postfix 
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
+
+gameCounter = 100
+gameCounter++;
+console.log(gameCounter); 
+
+
+
+
+
+
 
 
 
