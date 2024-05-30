@@ -37,4 +37,27 @@ console.log(typeof myFunction);
 console.log(typeof animals);  // returned type of any non primitive is object and return of function is object function.
 
 
+// ******************************************** Memory and Threads ********************************************
+
+// Stack (Primitive) -> we get copy of variable declared, Heap Memory (Non-Primitive) -> we get reference of original value, any change made goes to original value
+
+let myName = "Nishita"
+
+/* let anotherName = myName
+console.log(anotherName); */
+
+let anotherName = myName
+anotherName = "Nish"
+console.log(anotherName);
+
+let userOne = {
+    email: "userone@gmail.com",
+    upiId : "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "usertwo@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
 
