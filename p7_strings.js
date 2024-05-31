@@ -31,3 +31,13 @@ const url = "https://nish.com/nish%20community"
 console.log(url.replace('%20', '-'))
 console.log(url.includes('nish'))
 
+// String into Array (split based on - dash)
+
+console.log(name.split('-'));
+
+const str1 = 'Nish';
+const str2 = 'ita'
+const combinedstr = str1.concat('',str2)
+
+const char = str1.charAt(3);
+console.log(char);
