@@ -33,11 +33,11 @@ console.log(url.includes('nish'))
 
 // String into Array (split based on - dash)
 
-console.log(name.split('-'));
+console.log(name.split('-')); // split
 
 const str1 = 'Nish';
 const str2 = 'ita'
-const combinedstr = str1.concat('',str2)
+const combinedstr = str1.concat('',str2) // concat
 
-const char = str1.charAt(3);
+const char = str1.charAt(3);   // charAt
 console.log(char);
