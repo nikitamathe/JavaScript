@@ -3,9 +3,12 @@
 // object literal
 /* Object.create //constructor method // singleton */
 /* const JsUser ={} // empty object */
+
+
 const JsUser = {
     name:"Nishita" ,  
     "full name" :"Nishita Singh",    // here key and value both can be given by as not like array 
+    mySym : "mykey1",
     age: 29,
     location: "Jaipur",
     email: "nishita@gmail.com",
@@ -16,6 +19,9 @@ console.log(JsUser.email) ;  // not a good practice   // full name is not access
 console.log(JsUser["email"]) ; // mail string ki tarah
 //console.log(JsUser.full name);
 console.log(JsUser["full name"]) ;
+console.log(JsUser.mySym) ; 
+
+const mySym = Symbol("key1")
 
 
 
