@@ -24,6 +24,39 @@ console.log(regularUser.fullname.userfullname.firstname);   // also search for o
 // merge objects
 const obj1 = {1:"a",2:"b"}
 const obj2 = {3:"a",4:"b"}
-const obj3 = {obj1, obj2}
-console.log(obj3)
+const obj4 = {5:"a",6:"b"}
+//const obj3 = {obj1, obj2}
+//const obj3 = Object.assign(obj1, obj2)
+//const obj3 = Object.assign({}, obj1, obj2, obj4) // {} is target and others are source // if didn't add it as above everthing will get into obj1 as target  
+const obj3 ={...obj1,...obj2}  //spread operator // mostly used over above
+console.log(obj3);
+
+// If values came from database //Array of users
+const users= [
+{
+    id: 1,
+    email: "n1@gmail.com"
+},
+{
+    id: 2,
+    email: "n2@gmail.com"
+},
+{
+    id: 3,
+    email: "n3@gmail.com"
+},
+]
+console.log("           ***           ");
+users[1].email
+console.log("           ***           ");
+console.log(appUser);
+console.log("           ***           ");
+console.log(Object.keys(appUser));
+console.log("           ***           ");
+console.log(Object.values(appUser));
+console.log("           ***           ");
+console.log(Object.entries(appUser));
+
+console.log(appUser.hasOwnProperty('isLoggedIn'));
+
 
