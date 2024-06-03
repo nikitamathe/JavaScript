@@ -29,14 +29,21 @@ JsUser.email = "nishita2@gmail.com" // value change in object
 console.log(JsUser.email) ; 
 //Object.freeze(JsUser) // If we want to lock values so that no changes will be made by anyone 
 JsUser.email = "nishita3@gmail.com" 
-console.log(JsUser.email) ; 
+console.log(JsUser.email) ; // It gives output as nishita2@gmail.com because we freezed it above 
 
 // Function add
 JsUser.greeting = function(){
     console.log("Hello! JS user");
 }
-console.log(JsUser.greeting);    //undefined
+console.log(JsUser.greeting);    // function (anonymous). function doesn't execute,it returns only reference 
 console.log(JsUser.greeting()); //greeting is not a function because we freezed JsUser above
+
+JsUser.greetingTwo = function(){
+    console.log(`Hello! JS user, ${this.name}`); // string interpolation // this. when you want to reference same object
+}
+console.log(JsUser.greeting());  // one extra execution of undefined it shows
+console.log(JsUser.greetingTwo);
+
 
 
 
