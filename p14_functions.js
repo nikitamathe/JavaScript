@@ -51,5 +51,44 @@ function loginUserMessage(username){
 //console.log(loginUserMessage("Nishita"))
 //console.log(loginUserMessage(""))
 console.log(loginUserMessage())
-console.log(loginUserMessage("NISHITA")) //and if you passed any value then it will overwrite sam which was default value
+//console.log(loginUserMessage("NISHITA")) //and if you passed any value then it will overwrite sam which was default value
 
+// when you don't know the number of arguements will come so in that way to prepare our parameters
+
+//function calculateCartPrice(num1){
+
+    //how rest operator is passed in function
+
+    // function calculateCartPrice(...num1){      //... is rest operator    // spread and rest operator are same syntactically ... but usecase depends on where it is being used 
+    function calculateCartPrice(val1,val2,...num1){  //200 goes to val1, 400 goes to val2 
+    return num1
+}
+//console.log(calculateCartPrice(2));
+console.log(calculateCartPrice(200,400,500,1000)) // for such kind, we use rest operator 
+
+
+const user = {
+    username :"Nish",                 // OBJECT
+    price: 199
+}
+
+function handleObject(anyobject){  
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)                           // FUNCTION
+}
+
+handleObject(user)                     // FUNCTION CALL
+handleObject({
+    username: "sam",
+    price: 399
+}) 
+
+// array
+
+const myNewArray   = [200,400,100,600] 
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200,400,500,1000]))
