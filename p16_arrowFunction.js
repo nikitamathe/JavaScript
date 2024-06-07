@@ -16,14 +16,14 @@ const user = {
 
 // console.log(this);
 
-// function functOne(){
+// function chai(){
 //     let username = "nish"
 //     console.log(this.username);
 // }
 
 // functOne()
 
-// const functOne = function () {
+// const funtOne = function () {
 //     let username = "nish"
 //     console.log(this.username);
 // }
