@@ -16,7 +16,7 @@ const user = {
 
 // console.log(this);
 
-// function chai(){
+// function functOne(){
 //     let username = "nish"
 //     console.log(this.username);
 // }
